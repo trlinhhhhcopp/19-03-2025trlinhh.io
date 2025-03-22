@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài đồng hồ</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .header {
+        background-color: yellow;
+        height: 150px;
+        text-align: center;
+      }
+      .menu {
+        background-color: black;
+        overflow: hidden;
+      }
+      .menu .child{
+        margin-left: 400px;
+      }
+      .menu a {
+        float: left;
+        display: block;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .menu a:hover {
+        background-color: gray;
+      }
+      .main {
+        display: flex;
+        width: 100%;
+        height: calc(100vh - 150px - 40px);
+      }
+      .content {
+        width: 70%;
+        padding: 20px;
+      }
+      .content h1 {
+        color: red;
+      }
+      .content img {
+        width: 500px;
+      }
+      .sidebar {
+        width: 30%;
+        background-color: green;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .top-box {
+        border: 2px solid white;
+        padding: 50px;
+        margin-bottom: 20px;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+      }
+      .bottom-container {
+        display: flex;
+        gap: 15px;
+        height: 100%;
+      }
+      .bottom-box {
+        flex: 1;
+        border: 2px solid white;
+        padding: 50px;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1></h1>
+    </div>
+
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Feedback</a>
+      <a href="#">FAQs</a>
+      <a href="#">My Account</a>
+      <a href="#" class="child">English</a>
+      <a href="#">Tiếng Việt</a>
+    </div>
+
+    <div class="main">
+      <div class="content">
+        <h1>TRANG CHỦ</h1>
+        <img src="https://bizweb.dktcdn.net/100/202/418/files/ps4-pro-spider-man-limited-edition-bachtungps-02ps4-pro-spider-man-limited-edition-bachtungps-02.png?v=1532596334946" alt="Đồng hồ" />
+      </div>
+
+      <div class="sidebar">
+        <div class="top-box">RIGHT-TOP</div>
+        <div class="bottom-container">
+          <div class="bottom-box">RIGHT-LEFT</div>
+          <div class="bottom-box">RIGHT-RIGHT</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
